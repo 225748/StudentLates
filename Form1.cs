@@ -41,5 +41,9 @@ namespace StudentLates
             dbConnector.Close();
         }
 
+        private void lstVStudents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

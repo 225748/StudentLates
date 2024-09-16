@@ -29,17 +29,43 @@
         private void InitializeComponent()
         {
             this.lstVStudents = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lstVStudents
             // 
+            this.lstVStudents.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lstVStudents.FullRowSelect = true;
             this.lstVStudents.HideSelection = false;
-            this.lstVStudents.Location = new System.Drawing.Point(50, 76);
+            this.lstVStudents.Location = new System.Drawing.Point(110, 151);
             this.lstVStudents.Name = "lstVStudents";
-            this.lstVStudents.Size = new System.Drawing.Size(288, 201);
+            this.lstVStudents.Size = new System.Drawing.Size(341, 206);
             this.lstVStudents.TabIndex = 0;
             this.lstVStudents.UseCompatibleStateImageBehavior = false;
             this.lstVStudents.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "First Name";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "surName";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "DOB";
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Student ID";
             // 
             // Form1
             // 
@@ -57,6 +83,10 @@
         #endregion
 
         private System.Windows.Forms.ListView lstVStudents;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
 

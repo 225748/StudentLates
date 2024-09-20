@@ -33,8 +33,8 @@ namespace StudentLates
             lstVStudents.Items.Clear();
             while (dr.Read())
             {
-                lstVStudents.Items.Add(dr[0].ToString());
-                lstVStudents.Items[lstVStudents.Items.Count - 1].SubItems.Add(dr[1].ToString());
+                lstVStudents.Items.Add(dr[0].ToString()); //retrieves all the columns headings
+                lstVStudents.Items[lstVStudents.Items.Count - 1].SubItems.Add(dr[1].ToString()); //each column is a subitem
                 lstVStudents.Items[lstVStudents.Items.Count - 1].SubItems.Add(dr[2].ToString());
                 lstVStudents.Items[lstVStudents.Items.Count - 1].SubItems.Add(dr[3].ToString());
             }

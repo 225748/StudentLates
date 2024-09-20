@@ -45,5 +45,12 @@ namespace StudentLates
         {
 
         }
+
+        private void btnOpenStudentForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmStudent studentForm = new frmStudent();
+            studentForm.Show();
+        }
     }
 }

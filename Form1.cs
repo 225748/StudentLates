@@ -51,6 +51,12 @@ namespace StudentLates
             this.Hide();
             frmStudent studentForm = new frmStudent();
             studentForm.Show();
+            
+        }
+
+        private void lstVStudents_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

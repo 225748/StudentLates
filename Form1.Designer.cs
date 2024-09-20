@@ -47,26 +47,31 @@
             this.lstVStudents.HideSelection = false;
             this.lstVStudents.Location = new System.Drawing.Point(46, 64);
             this.lstVStudents.Name = "lstVStudents";
-            this.lstVStudents.Size = new System.Drawing.Size(341, 206);
+            this.lstVStudents.Size = new System.Drawing.Size(482, 206);
             this.lstVStudents.TabIndex = 0;
             this.lstVStudents.UseCompatibleStateImageBehavior = false;
             this.lstVStudents.View = System.Windows.Forms.View.Details;
+            this.lstVStudents.SelectedIndexChanged += new System.EventHandler(this.lstVStudents_SelectedIndexChanged_1);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Student ID";
+            this.columnHeader1.Width = 79;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "First Name";
+            this.columnHeader2.Width = 106;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "surName";
+            this.columnHeader3.Width = 138;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "DOB";
+            this.columnHeader4.Width = 153;
             // 
             // btnOpenStudentForm
             // 

@@ -95,5 +95,24 @@ namespace StudentLates
             reOpenForm1();
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure you wish to delete this student?", "changes are non-reversible", MessageBoxButtons.YesNo);
+            if (MessageBox.Result == DialogResult.Yes)
+            {
+                clsDBConnector dbConnector = new clsDBConnector();
+                string cmdStr = "DELETE FROM tblStudent " +
+                                    $"WHERE (studentID = {cmbStudentID.SelectedValue})";
+                dbConnector.Connect();
+                dbConnector.DoDML(cmdStr);
+                dbConnector.Close();
+                reOpenForm1();
+            }
+            else
+            {
+                
+            }
+        }
     }
 }

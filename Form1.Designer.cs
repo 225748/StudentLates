@@ -80,7 +80,7 @@
             this.btnOpenStudentForm.Name = "btnOpenStudentForm";
             this.btnOpenStudentForm.Size = new System.Drawing.Size(148, 62);
             this.btnOpenStudentForm.TabIndex = 1;
-            this.btnOpenStudentForm.Text = "Add new Student";
+            this.btnOpenStudentForm.Text = "Add / Update a Student";
             this.btnOpenStudentForm.UseVisualStyleBackColor = true;
             this.btnOpenStudentForm.Click += new System.EventHandler(this.btnOpenStudentForm_Click);
             // 

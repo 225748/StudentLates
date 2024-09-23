@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsDBConnector.cs" />
+    <Compile Include="CLsStudent.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

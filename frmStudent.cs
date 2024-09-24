@@ -98,8 +98,8 @@ namespace StudentLates
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure you wish to delete this student?", "changes are non-reversible", MessageBoxButtons.YesNo);
-            if (MessageBox.Result == DialogResult.Yes)
+            var result = MessageBox.Show($"Are you sure you wish to delete this student? {Environment.NewLine}Changes are non-reversible","Warning!",  MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
                 clsDBConnector dbConnector = new clsDBConnector();
                 string cmdStr = "DELETE FROM tblStudent " +
@@ -111,7 +111,7 @@ namespace StudentLates
             }
             else
             {
-                
+                MessageBox.Show("Changes not updated");
             }
         }
     }

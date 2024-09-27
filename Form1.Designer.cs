@@ -35,6 +35,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnOpenStudentForm = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnLatesV2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstVStudents
@@ -95,11 +96,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnLatesV2
+            // 
+            this.btnLatesV2.Location = new System.Drawing.Point(291, 296);
+            this.btnLatesV2.Name = "btnLatesV2";
+            this.btnLatesV2.Size = new System.Drawing.Size(85, 62);
+            this.btnLatesV2.TabIndex = 3;
+            this.btnLatesV2.Text = "Add Lates V2";
+            this.btnLatesV2.UseVisualStyleBackColor = true;
+            this.btnLatesV2.Click += new System.EventHandler(this.btnLatesV2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLatesV2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOpenStudentForm);
             this.Controls.Add(this.lstVStudents);
@@ -119,6 +131,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.Button btnOpenStudentForm;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLatesV2;
     }
 }
 

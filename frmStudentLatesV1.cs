@@ -27,7 +27,7 @@ namespace StudentLates
         {
             clsDBConnector dbConnector = new clsDBConnector();
             string cmdStr = "INSERT INTO tblLate (studentID,period,dateOfLate,minsLate) " +
-                            $"VALUES ('{txtStudentID.Text}','{comboPeriod.SelectedIndex + 1}','{DtpDateOfLate.Value.Date}','{txtMinsLate.Text}')";
+                            $"VALUES ('{txtStudentID.Text}','{comboPeriod.SelectedValue}','{DtpDateOfLate.Value.Date}','{txtMinsLate.Text}')";
             dbConnector.Connect();
             dbConnector.DoDML(cmdStr);
             dbConnector.Close();

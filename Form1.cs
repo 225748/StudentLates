@@ -65,5 +65,12 @@ namespace StudentLates
             frmStudentLatesV1 latesForm = new frmStudentLatesV1();
             latesForm.Show();
         }
+
+        private void btnLatesV2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmStudentLatesV2 latesForm = new frmStudentLatesV2();
+            latesForm.Show();
+        }
     }
 }

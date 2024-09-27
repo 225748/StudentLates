@@ -54,7 +54,7 @@ namespace StudentLates
             cmbStudentID.ValueMember = "studentID";
             cmbStudentID.DataSource = studentList;
             dbConnector.Close();
-
+            
         }
     }
 }

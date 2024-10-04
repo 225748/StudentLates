@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lstVStudents = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -37,6 +38,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnLatesV2 = new System.Windows.Forms.Button();
             this.btnLateAdvanced = new System.Windows.Forms.Button();
+            this.btnPrntMinsLate = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.SuspendLayout();
             // 
             // lstVStudents
@@ -116,11 +120,32 @@
             this.btnLateAdvanced.Text = "Add Lates Advanced";
             this.btnLateAdvanced.UseVisualStyleBackColor = true;
             // 
+            // btnPrntMinsLate
+            // 
+            this.btnPrntMinsLate.Location = new System.Drawing.Point(556, 64);
+            this.btnPrntMinsLate.Name = "btnPrntMinsLate";
+            this.btnPrntMinsLate.Size = new System.Drawing.Size(222, 45);
+            this.btnPrntMinsLate.TabIndex = 5;
+            this.btnPrntMinsLate.Text = "Print Mins Late Report";
+            this.btnPrntMinsLate.UseVisualStyleBackColor = true;
+            this.btnPrntMinsLate.Click += new System.EventHandler(this.btnPrntMinsLate_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPrntMinsLate);
             this.Controls.Add(this.btnLateAdvanced);
             this.Controls.Add(this.btnLatesV2);
             this.Controls.Add(this.button1);
@@ -144,6 +169,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnLatesV2;
         private System.Windows.Forms.Button btnLateAdvanced;
+        private System.Windows.Forms.Button btnPrntMinsLate;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 

@@ -36,6 +36,7 @@
             this.btnOpenStudentForm = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLatesV2 = new System.Windows.Forms.Button();
+            this.btnLateAdvanced = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstVStudents
@@ -106,11 +107,21 @@
             this.btnLatesV2.UseVisualStyleBackColor = true;
             this.btnLatesV2.Click += new System.EventHandler(this.btnLatesV2_Click);
             // 
+            // btnLateAdvanced
+            // 
+            this.btnLateAdvanced.Location = new System.Drawing.Point(382, 296);
+            this.btnLateAdvanced.Name = "btnLateAdvanced";
+            this.btnLateAdvanced.Size = new System.Drawing.Size(85, 62);
+            this.btnLateAdvanced.TabIndex = 4;
+            this.btnLateAdvanced.Text = "Add Lates Advanced";
+            this.btnLateAdvanced.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLateAdvanced);
             this.Controls.Add(this.btnLatesV2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOpenStudentForm);
@@ -132,6 +143,7 @@
         private System.Windows.Forms.Button btnOpenStudentForm;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnLatesV2;
+        private System.Windows.Forms.Button btnLateAdvanced;
     }
 }
 
